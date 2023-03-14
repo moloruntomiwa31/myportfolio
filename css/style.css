@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a2547;
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: Poppins;
+}
+
+p {
+    font-family: Raleway;
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: 1s ease-in-out;
+    outline: none;
+    background: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0px;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #ebebeb;
+    border-radius: 9px;
+    left: 0;
+    transition: 0.25s ease-in-out;
+    transform: rotate(0deg);
+}
+
+/* clicked */
+.navbar-toggler .top-bar {
+    margin: 0;
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+.navbar-toggler .bottom-bar {
+    transform: rotate(-135deg);
+    margin-top: 0px;
+}
+
+/* collapse */
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar{
+   opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+   transform: rotate(0deg);
+    width: 60%;
+}
+
+/* nav-utilities */
+.navbar-light .navbar-brand,  
+.navbar-light .navbar-brand:hover{
+    color: #c9eeff;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #62cdff;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: " ";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.5s;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 60vh;
+    align-items: end;
+}
+/* @media screen and (min-width: 375px) {
+    footer {height: 40vh; }
+} */
+@media screen and (min-width:768px) {
+    .navbar-light .navbar-nav .nav-link:hover::after {
+            width: 50%;
+    }
+    .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+    }
+    footer {
+      height: 20vh;
+      align-items: center;
+  }
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(236, 234, 234, 0.9);
+}

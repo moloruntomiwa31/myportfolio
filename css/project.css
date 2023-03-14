@@ -1,0 +1,26 @@
+.image-gal {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    margin-top: 7%;
+}
+.image-gal div p {margin-top: 10px;}
+.image-gal div img {transition: transform 1s;}
+.image-gal div img:hover {
+    transform: scale(1.1);
+}
+.image-gal div a {
+    margin-left: 20px;
+}
+.image-gal .project-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .image-gal .project-1 {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}

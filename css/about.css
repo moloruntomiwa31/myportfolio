@@ -1,0 +1,23 @@
+p{
+    color: #fff;
+}
+h1, h3 {
+    color: #62cdff;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ul li {
+    color: #c4e4ff;
+}
+a {
+    text-decoration: none;
+    color: #62cdff;
+}
+a:hover {
+    color: #3e81a0;
+}
+footer {
+    height: 20vh;
+}
