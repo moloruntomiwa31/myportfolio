@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="/css/project.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,13 +50,15 @@
             <h1 class="text-center text-uppercase"> Projects</h1>
             <div class="image-gal">
                 <div class="project-1">
-                        <div>
-                            <img src="./img/Screenshot (16).png" alt="" class="img-fluid">
+                        <div data-aos="fade-left"  data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
+                            <img src="./img/Screenshot (16).png" alt="" class="img-fluid" >
                             <p>Cuisine Restaurant Site <a href="https://moloruntomiwa31.github.io/cuisine/" target="_blank" id="a1"><i
                                         class="fa-solid fa-eye" style="color: aqua;"></i>
                                 </a>Live<span id="r-view"></span></p>
                         </div>
-                        <div>
+                        <div data-aos="fade-right"  data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
                             <img src="./img/Screenshot (19).png" alt="" class="img-fluid">
                             <p>Calculator<a href="https://moloruntomiwa31.github.io/calculator-app/" id="a2"><i class="fa-solid fa-eye"
                                         style="color: aqua;"></i>
@@ -63,13 +66,15 @@
                         </div>
                 </div>
                 <div class="project-1">
-                        <div>
+                        <div data-aos="fade-left"  data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
                             <img src="./img/Screenshot (20).png" alt="" class="img-fluid">
                             <p>Netflix Landing Page Clone<a href="https://moloruntomiwa31.github.io/Netflix-Landing-Page-Clone./" id="a3"><i
                                         class="fa-solid fa-eye" style="color: aqua;"></i>
                                 </a>Live<span id="n-view"></span></p>
                         </div>
-                        <div>
+                        <div data-aos="fade-right"  data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
                             <img src="./img/Screenshot (21).png" alt="" class="img-fluid">
                             <p>Shopping List<a href="https://moloruntomiwa31.github.io/shopping-list/" id="a4"><i class="fa-solid fa-eye"
                                         style="color: aqua;"></i>
@@ -92,6 +97,10 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a6d20f9282.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
