@@ -4,23 +4,25 @@
     place-items: center;
     margin-top: 7%;
 }
-.image-gal div p {margin-top: 10px;}
-.image-gal div img {transition: transform 1s;}
-.image-gal div img:hover {
-    transform: scale(1.1);
+.image-gal p {margin-top: 10px;}
+.image-gal h2 {
+    color: #62cdff;;
 }
-.image-gal div a {
-    margin-left: 20px;
-}
-.image-gal .project-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+.project-1 {
+    border: 3px solid #fff;
+    background-color: #0c386ba8; 
+    min-width:  200px;
+    max-width: 500px;
+    min-height: 250px;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding:  15px 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .image-gal .project-1 {
-        grid-template-columns: 1fr 1fr;
+    .image-gal {
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+    .project-1 {margin-top: 20px;}
 }

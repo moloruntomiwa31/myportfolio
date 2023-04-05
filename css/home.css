@@ -10,12 +10,11 @@
     height: 100%;
     align-items: start;
 }
-
 .row h1 span {
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     background: url("../img/wave2.jpg");
-    background-position: bottom;
+    background-position: top;
     border-radius: 10px;
     animation: back 5s linear infinite;
     -webkit-background-clip: text;
@@ -23,10 +22,23 @@
 .navbar {
     background-color: #0a2547;
 }
+.xs-margin {
+    padding-top: 20px;
+}
+#btn {
+    width: 60px;
+    height: fit-content;
+    background-color: #fff;
+    position: fixed;
+    bottom: 10px;
+    left: 8%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
 
 @keyframes back {
     100% {
-        background-position: top;
+        background-position: bottom;
     }
 }
 .hero .col-md-6 a {

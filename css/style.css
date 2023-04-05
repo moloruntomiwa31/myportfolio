@@ -11,6 +11,14 @@ body {
     font-family: Poppins;
 }
 
+.light-mode {
+    background-color: #dad8d8;
+}
+.light-mode p, .light-mode h1{
+    color: #0a2547;
+}
+.light-mode #btn {background-color: #0a2547;}
+
 p {
     font-family: Raleway;
 }
@@ -102,6 +110,10 @@ p {
     transform: translateX(-50%);
     background: #fff;
     transition: width 0.5s;
+}
+.img-fluid {
+    filter: contrast(110%);
+    filter: saturate(120%);
 }
 
 /* footer */
