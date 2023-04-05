@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .image-gal {
     display: grid;
     width: 100%;
@@ -5,12 +8,12 @@
     margin-top: 7%;
 }
 .image-gal p {margin-top: 10px;}
-.image-gal h2 {
+.project-1 h2 {
     color: #62cdff;
 }
 .project-1 {
     border: 3px solid #fff;
-    background-color: #0c386ba8; 
+    background-color: #5d7ea7a8; 
     min-width:  200px;
     max-width: 500px;
     min-height: 250px;
