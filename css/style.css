@@ -87,6 +87,10 @@ p {
     width: 60%;
 }
 
+
+.navbar {
+max-width: 100%;
+}
 /* nav-utilities */
 .navbar-light .navbar-brand,  
 .navbar-light .navbar-brand:hover{
