@@ -1,5 +1,6 @@
 const themeBtn = document.getElementById("btn");
 const border = document.querySelector(".container .row .img-fluid")
+const preLoader = document.getElementById("preloader")
 let borderColor = "white"
 themeBtn.addEventListener("click", ()  => {
     const element = document.body
@@ -12,3 +13,8 @@ themeBtn.addEventListener("click", ()  => {
         borderColor = "white"
     }
 }) 
+
+
+window.addEventListener("load", () => {
+    preLoader.style.display = "none"
+})

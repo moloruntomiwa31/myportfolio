@@ -49,11 +49,12 @@
     color: #3e81a0;
 }
 .hero img {
-    border-radius: 50%;
     width: inherit;
     border: 2px solid #fff;
     padding: 10px;
+    border-radius: 10px;
 }
+.my-img {border-radius: 20px;}
 /* @media screen and (min-width:768px) {
     .hero img {
         width: 50%;
