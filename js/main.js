@@ -13,3 +13,9 @@ window.addEventListener("load", () => {
         content.style.display = "block"
     }, 3000)
 })
+
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+}
