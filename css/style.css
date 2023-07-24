@@ -127,9 +127,16 @@ footer {
     height: 60vh;
     align-items: end;
 }
-/* @media screen and (min-width: 375px) {
-    footer {height: 40vh; }
-} */
+.my-image {
+    position: fixed;
+    bottom: 10px;
+    right: 8%;
+    width: 50px;
+    height: 50px;
+}
+.my-image img {
+    border-radius: 50%;
+}
 @media screen and (min-width:768px) {
     .navbar-light .navbar-nav .nav-link:hover::after {
             width: 50%;
@@ -148,13 +155,26 @@ footer {
 }
 
 .preloader {
-    background: #0a2549 url(../img/loading-waiting.gif) no-repeat center center;
-    background-size: 10%;
+    display: grid;
+    place-items: center;
     height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.spinner {
+    border: 4px dotted rgb(255, 255, 255);
+    border-top: 6px dotted #3f7ba8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
