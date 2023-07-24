@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Syne&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +9,9 @@ body {
     background-color: #0a2549;
     width: 100%;
     font-size: 1.3rem;
-    font-family: Poppins;
+    font-family: Syne;
 }
+.header {font-family: Poppins;}
 
 .light-mode {
     background-color: #dad8d8;
@@ -21,7 +22,7 @@ body {
 .light-mode #btn {background-color: #0a2547;}
 
 p {
-    font-family: Raleway;
+    font-family: Syne;
 }
 
 .navbar-toggler {
@@ -162,11 +163,14 @@ footer {
 
 .spinner {
     border: 4px dotted rgb(255, 255, 255);
-    border-top: 6px dotted #3f7ba8;
+    border-top: 6px dotted #96bcd8;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     animation: spin 1s linear infinite;
+}
+#content {
+    display: none;
 }
 
 @keyframes spin {
