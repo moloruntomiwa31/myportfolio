@@ -9,8 +9,8 @@ main {
     margin: 20px 0;
 }
 footer {
-    position: absolute;
-    bottom: 8px;
+    position: fixed;
+    bottom: 0px;
 }
 @media screen and (max-width:768px){
     .navbar>.container {
@@ -22,4 +22,16 @@ footer {
         padding: 10px 0;
     }
 }
-textarea {resize: none;}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; 
+}
+textarea {resize: none; outline: none; padding: 15px; border-radius: 5px;}
+textarea::placeholder {
+    color: black;
+}
