@@ -4,12 +4,12 @@ p{
 h1, h3 {
     color: #62cdff;
 }
+.experience {margin-top: 2rem; color: #87d7fc;}
 ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 ul li {
-    color: #c4e4ff;
+    color: white;
 }
 a {
     text-decoration: none;

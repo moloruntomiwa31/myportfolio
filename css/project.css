@@ -3,9 +3,12 @@ body {
 }
 .image-gal {
     display: grid;
-    width: 100%;
+    min-width: 100%;
     place-items: center;
-    margin-top: 7%;
+    margin-top: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
 }
 .image-gal p {margin-top: 10px;}
 .project-1 h2 {
@@ -14,11 +17,9 @@ body {
 .project-1 {
     border: 3px solid #fff;
     background-color: #5d7ea7a8; 
-    min-width:  200px;
-    max-width: 400px;
-    min-height: 250px;
-    margin-top: 50px;
     border-radius: 10px;
+    min-height: 100%;
+    min-width: 100%;
     padding:  15px 20px;
 }
 .project-1 h2 {
@@ -35,16 +36,8 @@ body {
 }
 .skill-used p {
     background-color: #0a2549;
-    padding: 8px;
+    padding: 7px;
     margin: 5px 5px 5px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     text-transform: capitalize;
-}
-
-@media screen and (min-width: 768px) {
-    .image-gal {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .project-1 {margin-top: 20px;}
 }
