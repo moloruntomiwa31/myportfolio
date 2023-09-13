@@ -6,15 +6,3 @@ themeBtn.addEventListener("click", () => {
   element.classList.toggle("light-mode");
 });
 
-window.onbeforeunload = () => {
-  for (const form of document.getElementsByTagName("form")) {
-    form.reset();
-  }
-};
-
-const connectForm = document.getElementById("connectForm");
-connectForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  connectForm.reset();
-  alert("Form submitted successfully!");
-});
